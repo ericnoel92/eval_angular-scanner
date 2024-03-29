@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git branch: 'main', credentialsId: 'pat_Rui_fork', url:  "${Giturl}"
+                git branch: 'main',  url:  "${Giturl}"
             }
         }
         stage('Build') {
